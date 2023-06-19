@@ -1,3 +1,3 @@
 // alert('hello world!')
 
-console.log("it's work");
+console.log("JS file working fine");

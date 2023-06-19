@@ -1,12 +1,9 @@
 .header{
-
-    &__logo {
-
-        img {
-
-        } 
+    
+    nav {
+        padding: 25px;
     }
-
+    
     &__menu {// Mobile Menu
 
         > span {
@@ -14,7 +11,7 @@
             width: 26px;
             height: 2px;
             background-color: $darkBlue;
-        
+            
             &:not(:last-child){
                 margin-bottom: 3px;
             }   
