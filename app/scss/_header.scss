@@ -1,7 +1,12 @@
 .header{
     
     nav {
-        padding: 25px;
+        padding: 1.0625rem 1.5rem;
+    }
+
+    &__logo{
+        width: 8.8125rem;
+        height: 1.375rem;
     }
     
     &__menu {// Mobile Menu
@@ -19,10 +24,19 @@
     }
 
     &__links {
-
+        border: 1px;
         a {
             font-size: 0.875rem;
             color: $grayishBlue;
+            transition: color 200ms ease-in-out;
+
+            &:not(:last-child){
+                margin-right: 32px;
+            }
+
+            &:hover{
+                color: $darkBlue;
+            }
         }
     }
 
