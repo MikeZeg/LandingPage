@@ -1,3 +1,17 @@
+@keyframes fade-in {
+  from {
+    display: none;
+    opacity: 0;
+  }
+  1% {
+    display: block;
+    opacity: 0;
+  }
+  to {
+    display: block;
+    opacity: 1;
+  }
+}
 html {
   font-size: 100%;
   box-sizing: border-box;
@@ -57,6 +71,28 @@ button, .button {
   }
 }
 
+.header.open .overlay {
+  display: block;
+  animation: fade-in 300ms ease-in-out none none forwards none;
+}
+.header.open .header__menu > span:first-child {
+  transform: rotate(45deg);
+}
+.header.open .header__menu > span:nth-child(2) {
+  opacity: 0;
+}
+.header.open .header__menu > span:last-child {
+  transform: rotate(-45deg);
+}
+.header .overlay {
+  position: fixed;
+  display: none;
+  top: 3.75rem;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: linear-gradient(hsl(233, 26%, 24%), transparent);
+}
 .header nav {
   padding: 1.0625rem 1.5rem;
 }
@@ -74,15 +110,6 @@ button, .button {
 }
 .header__menu > span:not(:last-child) {
   margin-bottom: 6px;
-}
-.header__menu.open > span:first-child {
-  transform: rotate(45deg);
-}
-.header__menu.open > span:nth-child(2) {
-  opacity: 0;
-}
-.header__menu.open > span:last-child {
-  transform: rotate(-45deg);
 }
 .header__links a {
   position: relative;
