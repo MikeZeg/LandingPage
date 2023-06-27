@@ -11,6 +11,7 @@ btnHamburger.addEventListener('click', function(){
         header.classList.remove('open');
         overlay.classList.remove('fade-in');
         overlay.classList.add('fade-out')
+        
 
     }else{ // Open Hamburger Menu
         header.classList.add('open');

@@ -6,7 +6,7 @@
 
     &.open{
 
-        .header__menu {
+        .header__toggle {
             > span:first-child{
                 transform: rotate(45deg);
             }
@@ -31,9 +31,9 @@
     background-image: linear-gradient($darkBlue,transparent);
     
 }
-
     nav {
-        padding: 1.0625rem 1.5rem;
+        padding-top: 1.0625rem;
+        padding-bottom: 1.0625rem;
     }
 
     &__logo{
@@ -41,7 +41,7 @@
         height: 1.375rem;
     }
     
-    &__menu {// Mobile Menu
+    &__toggle {// Mobile Toggle
 
         > span {
             display: block;
@@ -56,6 +56,20 @@
             }   
         }
         
+    }
+
+    &__menu {
+        background: $white;
+        margin: 0px 1.5rem;
+        padding: 1.625rem;
+        border-radius: 3px;
+
+        a {
+            display: block;
+            color: $darkBlue;
+            padding: 0.635rem;
+            text-align: center;
+        }
     }
 
     &__links {
