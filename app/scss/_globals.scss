@@ -17,6 +17,10 @@ body {
     font-weight: 300;
     color: $grayishBlue;
     font-family: 'Public Sans', sans-serif;
+
+    &.nonscroll {
+        overflow: hidden;
+    }
     
 }
 
