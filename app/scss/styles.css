@@ -70,6 +70,8 @@ a, a:visited, a:hover {
 }
 
 .container {
+  max-width: 69.375rem;
+  margin: 0 auto;
   padding-top: 2.25rem;
   padding-right: 1.5rem;
   padding-bottom: 2.25rem;
@@ -200,6 +202,12 @@ button:hover, .button:hover {
   opacity: 1;
 }
 
+@media (min-width: 64em) {
+  .hero {
+    display: flex;
+    align-items: center;
+  }
+}
 .hero__image {
   position: relative;
   background-image: url("/images/bg-intro-mobile.svg");
@@ -207,6 +215,15 @@ button:hover, .button:hover {
   background-repeat: no-repeat;
   background-position: center center;
   min-height: 23.5rem;
+}
+@media (min-width: 64em) {
+  .hero__image {
+    min-height: 40.1rem;
+    flex: 3;
+    order: 2;
+    background-image: url("/images/bg-intro-desktop.svg");
+    background-position: left center;
+  }
 }
 .hero__image::before {
   content: "";
@@ -220,6 +237,12 @@ button:hover, .button:hover {
 }
 .hero__text {
   text-align: center;
+}
+@media (min-width: 64em) {
+  .hero__text {
+    flex: 2;
+    order: 1;
+  }
 }
 .hero__text h1 {
   font-weight: 300;
