@@ -56,6 +56,11 @@ body {
   color: hsl(233, 8%, 62%);
   font-family: "Public Sans", sans-serif;
 }
+@media (min-width: ) {
+  body {
+    font-size: 1.125rem;
+  }
+}
 body.nonscroll {
   overflow: hidden;
 }
@@ -72,9 +77,31 @@ a, a:visited, a:hover {
 .container {
   max-width: 69.375rem;
   margin: 0 auto;
+}
+.container--pall {
   padding-top: 2.25rem;
   padding-right: 1.5rem;
   padding-bottom: 2.25rem;
+  padding-left: 1.5rem;
+}
+.container--py {
+  padding-top: 2.25rem;
+  padding-bottom: 2.25rem;
+}
+.container--px {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+.container--pt {
+  padding-top: 2.25rem;
+}
+.container--pr {
+  padding-right: 1.5rem;
+}
+.container--pb {
+  padding-bottom: 2.25rem;
+}
+.container--pl {
   padding-left: 1.5rem;
 }
 
@@ -95,7 +122,6 @@ button, .button {
   display: inline-block;
   padding: 0.875rem 2.1875rem;
   background: linear-gradient(to right, hsl(136, 65%, 51%), hsl(192, 70%, 51%));
-  border: 0;
   border-radius: 60px;
   cursor: pointer;
   color: hsl(0, 0%, 100%);
@@ -202,8 +228,11 @@ button:hover, .button:hover {
   opacity: 1;
 }
 
+.hero {
+  background-color: hsl(0, 0%, 98%);
+}
 @media (min-width: 64em) {
-  .hero {
+  .hero .container {
     display: flex;
     align-items: center;
   }
@@ -218,7 +247,7 @@ button:hover, .button:hover {
 }
 @media (min-width: 64em) {
   .hero__image {
-    min-height: 40.1rem;
+    min-height: 41.1rem;
     flex: 3;
     order: 2;
     background-image: url("/images/bg-intro-desktop.svg");
@@ -242,6 +271,7 @@ button:hover, .button:hover {
   .hero__text {
     flex: 2;
     order: 1;
+    text-align: left;
   }
 }
 .hero__text h1 {
@@ -250,6 +280,11 @@ button:hover, .button:hover {
   color: hsl(233, 26%, 24%);
   font-size: 2.31rem;
   margin-bottom: 1.5rem;
+}
+@media (min-width: 64em) {
+  .hero__text h1 {
+    font-size: 3.25rem;
+  }
 }
 .hero__text p {
   line-height: 1.5;
