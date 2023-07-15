@@ -52,7 +52,7 @@ h2 {
     font-size: 1.875rem;
     margin-bottom: 1.5625rem;
 
-    @include breakpoint-up(larg){
+    @include breakpoint-up(large){
         font-size: 2.25rem;
         margin-bottom: 2.25rem;
     }
