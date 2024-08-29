@@ -19,9 +19,7 @@
 
         @include breakpoint-up(medium){
            min-height: 25rem;
-
         }
-
         @include breakpoint-up(large){
             min-height: 41.1rem;
             flex:3;
