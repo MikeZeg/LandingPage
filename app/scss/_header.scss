@@ -9,7 +9,6 @@
             > span:nth-child(2){
                 opacity: 0;
             }
-
             > span:last-child{
                 transform: rotate(-45deg);
             }
@@ -22,8 +21,7 @@
     right: 0;
     bottom: 0;
     left: 0;
-    background-image: linear-gradient($darkBlue,transparent);
-    
+    background-image: linear-gradient($darkBlue,transparent);   
 }
     nav {
         position: relative;
@@ -31,12 +29,10 @@
         padding-top: 1.0625rem;
         padding-bottom: 1.0625rem;
     }
-
     &__logo{
         width: 8.8125rem;
         height: 1.375rem;
     }
-    
     &__toggle {// Mobile Toggle
 
         > span {
@@ -51,7 +47,6 @@
                 margin-bottom: 6px;
             }   
         }
-        
     }
 
     &__menu {
@@ -64,7 +59,7 @@
         padding: 1.625rem;
         border-radius: 5px;
         z-index: 9999;
-
+        
         a {
             display: block;
             color: $darkBlue;
