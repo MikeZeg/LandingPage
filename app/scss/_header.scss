@@ -48,7 +48,6 @@
             }   
         }
     }
-
     &__menu {
         position: absolute;
         width: calc(100% - 3rem);
@@ -59,7 +58,7 @@
         padding: 1.625rem;
         border-radius: 5px;
         z-index: 9999;
-        
+
         a {
             display: block;
             color: $darkBlue;
@@ -91,7 +90,6 @@
                 background: linear-gradient(to right, $limeGreen, $brightCyan);
                 opacity: 0;
                 transition: opacity 200ms ease-in-out;
-
             }
             &:hover{
                 color: $darkBlue;
