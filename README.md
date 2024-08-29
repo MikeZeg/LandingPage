@@ -48,4 +48,5 @@ Users should be able to:
 <!-- ![mobile-performance]() -->
 
 ### Author 🚀
+ -- Coder Coder -> [Coder Coder](https://www.youtube.com/@TheCoderCoder)
  -- FrontEnd Mentor -> [MikeZeg](https://www.frontendmentor.io/profile/MikeZeg)
