@@ -1,7 +1,7 @@
 ## 👋 All
 #### This is a solution to the [Easybank landing page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/easybank-landing-page-WaUhkoDN). 
 
-### The website was created with the help of FreeCodeCamp's "Coder Coder" tutorial. By using SCSS mixins, the website was made moreresponsive. The tutorial helped me understand a better and quicker way to manipulate responsive website design, which ultimately improved my knowlege of UX nad UI.
+The website was created with the help of FreeCodeCamp's "Coder Coder" tutorial. By using SCSS mixins, the website was made moreresponsive. The tutorial helped me understand a better and quicker way to manipulate responsive website design, which ultimately improved my knowlege of UX nad UI.
 
 ### Table of contents
 
